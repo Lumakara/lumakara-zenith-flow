@@ -1,24 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lumakara-zenith-flow</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Lumakara Store - Premium Digital Products</title>
+    <meta name="description" content="Discover premium digital products and experiences crafted with Japanese attention to detail. High-quality assets, tools, and designs for modern creators." />
+    <meta name="author" content="Lumakara Store" />
 
-    <meta property="og:title" content="lumakara-zenith-flow" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lumakara.store/" />
+    <meta property="og:title" content="Lumakara Store - Premium Digital Products" />
+    <meta property="og:description" content="Discover premium digital products and experiences crafted with Japanese attention to detail." />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lumakara.store/" />
+    <meta property="twitter:title" content="Lumakara Store - Premium Digital Products" />
+    <meta property="twitter:description" content="Discover premium digital products and experiences crafted with Japanese attention to detail." />
+    <meta property="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#667eea" />
   </head>
 
   <body>
     <div id="root"></div>
+    <script>
+      // Show loading animation on first visit
+      if (!sessionStorage.getItem('hasVisited')) {
+        sessionStorage.setItem('hasVisited', 'true');
+        window.location.href = '/loading';
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
